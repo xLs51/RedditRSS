@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>subreddit</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.2.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.2.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.2.0/js/ui.js"></script>
+
+    <link href="/css/default.css" rel="stylesheet"/>
+    <link href="/pages/subreddit/subreddit.css" rel="stylesheet" />
+    <script src="/pages/subreddit/subreddit.js"></script>
+</head>
+<body>
+    <!-- The content that will be loaded and displayed. -->
+    <div class="subreddit fragment">
+        <header aria-label="Header content" role="banner">
+            <button data-win-control="WinJS.UI.BackButton"></button>
+            <h1 class="titlearea win-type-ellipsis">
+                <span class="pagetitle" id="title"></span>
+            </h1>
+        </header>
+        <div id="SubredditItemTemplate" data-win-control="WinJS.Binding.Template" class="hide">
+            <div class="listItemTemplate">
+                <div class="listItemImage">
+                    <img data-win-bind="src: thumbnail"/>
+                </div>
+                <div class="listItemTitle" data-win-bind="innerText: title">
+                </div>
+            </div>
+        </div>
+        <section aria-label="Main content" role="main">
+            <h2>Newest post</h2>
+            <div id="subreddit" data-win-control="WinJS.UI.ListView"
+                 data-win-options="{ itemDataSource: Subreddit.ItemList.dataSource, itemTemplate: SubredditItemTemplate }">
+            </div>
+        </section>
+    </div>
+    <div id="appbar" data-win-control="WinJS.UI.AppBar">
+        <button id="refresh" data-win-control="WinJS.UI.AppBarCommand" data-win-options="{id:'refresh', label:'Refresh', icon:'sync'}" type="button"></button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+﻿.subreddit section[role=main] {
+    margin: auto 120px;
+}
+
+.hide {
+    display: none;
+}
+
+#subreddit {
+    width: 100%;
+    height: 100%;
+    top: 25px;
+}
+
+#subreddit .win-item {
+    width: 250px;
+    height: 250px;
+}
+
+#subreddit .win-item img {
+    width: 250px;
+    height: 176px;
+}

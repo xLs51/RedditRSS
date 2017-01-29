@@ -1,0 +1,15 @@
+D:\Visual Studio 2013\Projects\RedditRSS\RedditRSS\bin\Release\resources.pri
+D:\Visual Studio 2013\Projects\RedditRSS\RedditRSS\bin\Release\AppxManifest.xml
+D:\Visual Studio 2013\Projects\RedditRSS\RedditRSS\bin\Release\RedditRSS.build.appxrecipe
+D:\Visual Studio 2013\Projects\RedditRSS\RedditRSS\bld\Release\priconfig.xml
+D:\Visual Studio 2013\Projects\RedditRSS\RedditRSS\bld\Release\priconfig.xml.intermediate
+D:\Visual Studio 2013\Projects\RedditRSS\RedditRSS\bld\Release\layout.resfiles
+D:\Visual Studio 2013\Projects\RedditRSS\RedditRSS\bld\Release\layout.resfiles.intermediate
+D:\Visual Studio 2013\Projects\RedditRSS\RedditRSS\bld\Release\resources.resfiles
+D:\Visual Studio 2013\Projects\RedditRSS\RedditRSS\bld\Release\resources.resfiles.intermediate
+D:\Visual Studio 2013\Projects\RedditRSS\RedditRSS\bld\Release\pri.resfiles
+D:\Visual Studio 2013\Projects\RedditRSS\RedditRSS\bld\Release\pri.resfiles.intermediate
+D:\Visual Studio 2013\Projects\RedditRSS\RedditRSS\bld\Release\qualifiers.txt
+D:\Visual Studio 2013\Projects\RedditRSS\RedditRSS\bld\Release\qualifiers.txt.intermediate
+D:\Visual Studio 2013\Projects\RedditRSS\RedditRSS\bld\Release\MultipleQualifiersPerDimensionFound.txt
+D:\Visual Studio 2013\Projects\RedditRSS\RedditRSS\bld\Release\ProjectArchitectures.txt

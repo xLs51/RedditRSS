@@ -1,0 +1,44 @@
+﻿.content section[role=main] {
+    margin: auto 120px;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+#content {
+    width: 100%;
+    height: 100%;
+}
+
+#share {
+    float: right;
+}
+
+@media screen and (-ms-view-state: fullscreen-landscape) {
+    #img {
+        max-width: 900px;
+        max-height: 450px;
+    }
+
+    #desc-bis {
+        width: 900px;
+        height: 450px;
+    }
+}
+
+@media screen and (-ms-view-state: fullscreen-portrait) {
+    #img {
+        max-width: 600px;
+        max-height: 800px;
+    }
+
+    #desc-bis {
+        width: 600px;
+        height: 800px;
+    }
+}

@@ -1,0 +1,15 @@
+D:\Visual Studio 2013\Projects\RedditRSS\RedditRSS\bin\Debug\ReverseMap\resources.pri
+D:\Visual Studio 2013\Projects\RedditRSS\RedditRSS\bin\Debug\AppxManifest.xml
+D:\Visual Studio 2013\Projects\RedditRSS\RedditRSS\bin\Debug\RedditRSS.build.appxrecipe
+D:\Visual Studio 2013\Projects\RedditRSS\RedditRSS\bld\Debug\priconfig.xml
+D:\Visual Studio 2013\Projects\RedditRSS\RedditRSS\bld\Debug\priconfig.xml.intermediate
+D:\Visual Studio 2013\Projects\RedditRSS\RedditRSS\bld\Debug\layout.resfiles
+D:\Visual Studio 2013\Projects\RedditRSS\RedditRSS\bld\Debug\layout.resfiles.intermediate
+D:\Visual Studio 2013\Projects\RedditRSS\RedditRSS\bld\Debug\resources.resfiles
+D:\Visual Studio 2013\Projects\RedditRSS\RedditRSS\bld\Debug\resources.resfiles.intermediate
+D:\Visual Studio 2013\Projects\RedditRSS\RedditRSS\bld\Debug\pri.resfiles
+D:\Visual Studio 2013\Projects\RedditRSS\RedditRSS\bld\Debug\pri.resfiles.intermediate
+D:\Visual Studio 2013\Projects\RedditRSS\RedditRSS\bld\Debug\qualifiers.txt
+D:\Visual Studio 2013\Projects\RedditRSS\RedditRSS\bld\Debug\qualifiers.txt.intermediate
+D:\Visual Studio 2013\Projects\RedditRSS\RedditRSS\bld\Debug\MultipleQualifiersPerDimensionFound.txt
+D:\Visual Studio 2013\Projects\RedditRSS\RedditRSS\bld\Debug\ProjectArchitectures.txt

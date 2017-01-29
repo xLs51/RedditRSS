@@ -1,0 +1,18 @@
+﻿.search section[role=main] {
+    margin: auto 120px;
+}
+
+.hide {
+    display: none;
+}
+
+#search-list {
+    width: 100%;
+    height: 100%;
+    top: 25px;
+}
+
+#search-list .win-item {
+    width: 225px;
+    height: 47px;
+}

@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>JORDAN</Machine>
+    <WindowsUser>Jordan</WindowsUser>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>713ed954-ffcf-4b4f-a140-1bd3a1813bf5</PackageIdentityName>
+    <IntermediateOutputPath>D:\Visual Studio 2013\Projects\RedditRSS\RedditRSS\bld\Debug\</IntermediateOutputPath>
+    <RegisteredManifestChecksum>91F94845C28DC96ACB127A98183659D21705166280825AD853A99F2ECF3DA4DC</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>713ed954-ffcf-4b4f-a140-1bd3a1813bf5_1.0.0.0_neutral__wmyngzxja4wtg</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>713ed954-ffcf-4b4f-a140-1bd3a1813bf5_wmyngzxja4wtg!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>713ed954-ffcf-4b4f-a140-1bd3a1813bf5</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=Jordan</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+    <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="D:\Visual Studio 2013\Projects\RedditRSS\RedditRSS\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-05-03T14:08:28.790</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="D:\Visual Studio 2013\Projects\RedditRSS\RedditRSS\css\default.css">
+      <PackagePath>css\default.css</PackagePath>
+      <Modified>2015-05-01T13:31:21.220</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Visual Studio 2013\Projects\RedditRSS\RedditRSS\pages\about\about.css">
+      <PackagePath>pages\about\about.css</PackagePath>
+      <Modified>2015-05-03T14:09:18.549</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Visual Studio 2013\Projects\RedditRSS\RedditRSS\pages\content\content.css">
+      <PackagePath>pages\content\content.css</PackagePath>
+      <Modified>2015-05-03T13:31:56.885</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Visual Studio 2013\Projects\RedditRSS\RedditRSS\pages\home\home.css">
+      <PackagePath>pages\home\home.css</PackagePath>
+      <Modified>2015-05-01T14:33:11.118</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Visual Studio 2013\Projects\RedditRSS\RedditRSS\pages\search\search.css">
+      <PackagePath>pages\search\search.css</PackagePath>
+      <Modified>2015-05-01T14:30:38.213</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Visual Studio 2013\Projects\RedditRSS\RedditRSS\pages\subreddit\subreddit.css">
+      <PackagePath>pages\subreddit\subreddit.css</PackagePath>
+      <Modified>2015-05-01T14:33:17.266</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Visual Studio 2013\Projects\RedditRSS\RedditRSS\images\logo.scale-100.png">
+      <PackagePath>images\logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-05-01T16:22:43.109</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Visual Studio 2013\Projects\RedditRSS\RedditRSS\images\smalllogo.scale-100.png">
+      <PackagePath>images\smalllogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-05-01T16:15:25.288</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Visual Studio 2013\Projects\RedditRSS\RedditRSS\images\splashscreen.scale-100.png">
+      <PackagePath>images\splashscreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-05-01T16:21:31.021</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Visual Studio 2013\Projects\RedditRSS\RedditRSS\images\storelogo.scale-100.png">
+      <PackagePath>images\storelogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-05-01T16:13:58.972</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Visual Studio 2013\Projects\RedditRSS\RedditRSS\js\default.js">
+      <PackagePath>js\default.js</PackagePath>
+      <Modified>2015-05-03T14:13:28.818</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Visual Studio 2013\Projects\RedditRSS\RedditRSS\js\navigator.js">
+      <PackagePath>js\navigator.js</PackagePath>
+      <Modified>2015-04-30T20:04:47.170</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Visual Studio 2013\Projects\RedditRSS\RedditRSS\pages\about\about.js">
+      <PackagePath>pages\about\about.js</PackagePath>
+      <Modified>2015-05-03T14:08:00.834</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Visual Studio 2013\Projects\RedditRSS\RedditRSS\pages\content\content.js">
+      <PackagePath>pages\content\content.js</PackagePath>
+      <Modified>2015-05-03T14:02:32.916</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Visual Studio 2013\Projects\RedditRSS\RedditRSS\pages\home\home.js">
+      <PackagePath>pages\home\home.js</PackagePath>
+      <Modified>2015-05-02T15:18:31.200</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Visual Studio 2013\Projects\RedditRSS\RedditRSS\pages\search\search.js">
+      <PackagePath>pages\search\search.js</PackagePath>
+      <Modified>2015-05-01T14:23:47.466</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Visual Studio 2013\Projects\RedditRSS\RedditRSS\pages\subreddit\subreddit.js">
+      <PackagePath>pages\subreddit\subreddit.js</PackagePath>
+      <Modified>2015-05-02T15:44:03.941</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Visual Studio 2013\Projects\RedditRSS\RedditRSS\pages\about\about.html">
+      <PackagePath>pages\about\about.html</PackagePath>
+      <Modified>2015-05-03T14:23:09.616</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Visual Studio 2013\Projects\RedditRSS\RedditRSS\pages\content\content.html">
+      <PackagePath>pages\content\content.html</PackagePath>
+      <Modified>2015-05-03T13:31:46.204</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Visual Studio 2013\Projects\RedditRSS\RedditRSS\pages\home\home.html">
+      <PackagePath>pages\home\home.html</PackagePath>
+      <Modified>2015-05-03T13:47:41.212</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Visual Studio 2013\Projects\RedditRSS\RedditRSS\default.html">
+      <PackagePath>default.html</PackagePath>
+      <Modified>2015-05-03T14:05:32.043</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Visual Studio 2013\Projects\RedditRSS\RedditRSS\pages\search\search.html">
+      <PackagePath>pages\search\search.html</PackagePath>
+      <Modified>2015-05-01T14:24:50.265</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Visual Studio 2013\Projects\RedditRSS\RedditRSS\pages\subreddit\subreddit.html">
+      <PackagePath>pages\subreddit\subreddit.html</PackagePath>
+      <Modified>2015-05-01T15:14:00.178</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Visual Studio 2013\Projects\RedditRSS\RedditRSS\bin\Debug\ReverseMap\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2015-05-03T14:08:28.618</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.WinJS.2.0\1.0\">
+      <Name>Microsoft.WinJS.2.0</Name>
+      <Version>1.0.9600.17018</Version>
+      <Architecture>Neutral</Architecture>
+      <FrameworkIdentity>Name=Microsoft.WinJS.2.0, MinVersion=1.0.9600.17018</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.WinJS.2.0\1.0\Microsoft.WinJS.2.0.appx</AppxLocation>
+      <MoreInfo>http://go.microsoft.com/fwlink/%3fLinkId=260891</MoreInfo>
+    </ResolvedSDKReference>
+  </ItemGroup>
+</Project>

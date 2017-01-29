@@ -1,0 +1,307 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type='text/xsl' href='C:\ProgramData\Windows App Certification Kit\results.xsl'?>
+<REPORT OVERALL_RESULT="PASS" VERSION="3.3" LATEST_VERSION="FALSE" UPDATE_DOWNLOAD_URL="http://go.microsoft.com/fwlink/?LinkID=246599&amp;amp;clcid=0x409" TOOLSET_ARCHITECTURE="X64" SecureBoot="FALSE" APP_TYPE="WindowsStore" PUBLISHER_DISPLAY_NAME="j0_xLs" OSVERSION="6.3.9600.0" OS="Microsoft Windows 8.1 Professionnel" PER_USER_APPLICATION="" PARTIAL_RUN="FALSE" LCID="1036" VALIDATION_TYPE="UI" ReportGenerationTime="17/05/2015 20:03:28" ID="12af662e49a77ae9429f0a298170b05c">
+  <REQUIREMENTS>
+    <REQUIREMENT NUMBER="1" TITLE="Test de nouvelle installation réversible" RATIONALE="Une nouvelle installation réversible permet aux utilisateurs de gérer (déployer et supprimer) les applications installées dans leur système." />
+    <REQUIREMENT NUMBER="2" TITLE="Installer dans les dossiers de test appropriés" RATIONALE="Windows fournit des emplacements spécifiques dans le système de fichiers pour le stockage des programmes et des composants logiciels, des données des applications partagées et des données des applications propres à l’utilisateur." />
+    <REQUIREMENT NUMBER="3" TITLE="Test de signature numérique de fichiers" RATIONALE="Une signature numérique Authenticode garantit l’authenticité du logiciel aux utilisateurs. Cette signature permet également de détecter l’éventuelle falsification d’un fichier, par exemple s’il est infecté par un virus." />
+    <REQUIREMENT NUMBER="4" TITLE="Test de prise en charge de Windows x64" RATIONALE="Pour assurer la compatibilité avec les versions 64 bits de Windows, les applications doivent nécessairement prendre en charge les applications de type Windows 64 ou 32 bits au moins pour pouvoir s’exécuter en toute transparence dans un système 64 bits." />
+    <REQUIREMENT NUMBER="5" TITLE="Test de vérification de la version du système d'exploitation" RATIONALE="Les applications ne doivent pas vérifier la correspondance exacte de la version (== 5.1). Si vous avez besoin d’une fonctionnalité spécifique, vérifiez sa disponibilité. Si vous avez besoin de Windows XP, vérifiez la présence de Windows XP ou d’une version ultérieure (&gt;= 5.1). Votre code de détection continuera ainsi à fonctionner avec les futures versions de Windows. Il est préférable que les programmes d’installation des pilotes et les modules de désinstallation ne vérifient pas la version du système d’exploitation." />
+    <REQUIREMENT NUMBER="6" TITLE="Test de contrôle de compte utilisateur (UAC)" RATIONALE="La plupart des applications ne nécessitent pas de privilèges d’administrateur lors de l’exécution et s’exécutent généralement très bien avec un compte d’utilisateur standard. Les applications Windows ont besoin d’un fichier manifeste (intégré ou externe) qui définit leur niveau d’exécution et indique au système d’exploitation les privilèges nécessaires à leur exécution." />
+    <REQUIREMENT NUMBER="7" TITLE="Se conformer aux messages du gestionnaire de démarrage du système" RATIONALE="Lors d’une interruption critique, les applications qui renvoient FALSE à WM_QUERYENDSESSION recevront WM_ENDSESSION et seront fermées, tandis que celles qui ne répondent pas dans les temps à WM_QUERYENDSESSION seront interrompues." />
+    <REQUIREMENT NUMBER="8" TITLE="Test du mode sans échec" RATIONALE="Par défaut, la plupart des pilotes et des services qui n’ont pas été préinstallés avec Windows ne sont pas démarrés en Mode sans échec. Ils doivent dans ce cas rester désactivés, sauf lorsque le système en a besoin pour des opérations de base, pour effectuer un diagnostic et dans l’objectif d’une récupération." />
+    <REQUIREMENT NUMBER="9" TITLE="Test de session multi-utilisateurs" RATIONALE="Les utilisateurs de Windows doivent pouvoir exécuter des sessions simultanées sans conflits ni interruptions.  Les applications doivent donc s’assurer que leurs fonctionnalités standard ne sont pas affectées lorsqu’elles s’exécutent dans plusieurs sessions, localement ou à distance. Les paramètres des applications et les fichiers de données ne doivent pas persister entre les différents utilisateurs. Les préférences et les données confidentielles de la session de tout utilisateur doivent être isolées." />
+    <REQUIREMENT NUMBER="10" TITLE="Test des blocages et pannes" RATIONALE="Les défaillances des applications, telles que les pannes et les blocages, sont pour les utilisateurs des interruptions majeures et entraînent une certaine frustration. L’élimination de ces défaillances améliore la stabilité et la fiabilité des applications et, de façon générale, renforce la satisfaction des utilisateurs.">
+      <TEST INDEX="47" NAME="Tests de lancement de l’application" DESCRIPTION="Tests de lancement de l’application." EXECUTIONTIME="00h:00m:38s.89ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="21" NAME="Blocages et pannes" DESCRIPTION="N’installez pas les exécutables qui s’arrêtent ou se bloquent pendant le processus de test." EXECUTIONTIME="00h:00m:08s.19ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="11" TITLE="Test de compatibilité et de résilience" RATIONALE="Lorsqu’il détecte le fonctionnement non compatible d’une application, Windows applique un correctif de compatibilité pour que cette application fonctionne correctement, ce qui garantit la satisfaction de l’utilisateur. Les applications ne doivent pas compter sur ce comportement car son seul objectif est de permettre aux applications héritées de fonctionner correctement sous Windows." />
+    <REQUIREMENT NUMBER="12" TITLE="Test de conformité du package" RATIONALE="Un ou plusieurs attributs requis n’étaient pas présents dans le manifeste du package.">
+      <TEST INDEX="31" NAME="Manifeste de l'application" DESCRIPTION="Le manifeste de l’application doit inclure des entrées valides pour tous les champs requis." EXECUTIONTIME="00h:00m:04s.84ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="13" TITLE="Test des meilleures pratiques de sécurité Windows" RATIONALE="Les applications ne doivent pas modifier les paramètres de sécurité par défaut de Windows." />
+    <REQUIREMENT NUMBER="14" TITLE="Test des fonctionnalités de sécurité Windows" RATIONALE="Les applications doivent respecter les fonctionnalités de sécurité de Windows.">
+      <TEST INDEX="33" NAME="Analyseur binaire" DESCRIPTION="Analyse des fonctionnalités de sécurité activées dans les binaires" EXECUTIONTIME="00h:00m:04s.00ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="70" NAME="Analyseur de fichiers non autorisés" DESCRIPTION="Analyse de l’application pour détecter des fichiers non sécurisés connus" EXECUTIONTIME="00h:00m:02s.86ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="62" NAME="Signature de code privé" DESCRIPTION="L'application ne doit pas créer un package contenant des fichiers de clés de signature de code." EXECUTIONTIME="00h:00m:02s.72ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="15" TITLE="Test des API prises en charge" RATIONALE="L’application ne doit se référer qu’aux API autorisées par le Kit de développement logiciel (SDK) de Windows pour les applications Windows Store.">
+      <TEST INDEX="38" NAME="API prises en charge" DESCRIPTION="Toute application Windows Store ne doit utiliser que les API prises en charge par la plateforme." EXECUTIONTIME="00h:00m:04s.09ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="17" TITLE="Test de performance" RATIONALE="L'application doit démarrer et s'interrompre rapidement et être réactive tout en ne consommant qu'une quantité raisonnable de ressources système (CPU, E/S de fichiers, mémoire, etc.) pour que les opérations de commutation et multitâche effectuées entre les applications non ouvertes précédemment soient rapides.">
+      <TEST INDEX="50" NAME="Génération du code d'octet" DESCRIPTION="La génération du code d'octet doit être complétée pour les packages contenant une application Windows Store HTML5." EXECUTIONTIME="00h:00m:03s.66ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="60" NAME="Références de liaisons optimisées" DESCRIPTION="Lors de l'utilisation de liaisons, WinJS.Binding.optimizeBindingReferences devrait être défini sur true pour optimiser l'utilisation de la mémoire." EXECUTIONTIME="00h:00m:03s.96ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="19" TITLE="Test des ressources du manifeste de l'application" RATIONALE="Les ressources valides doivent être définies dans le fichier resources.pri du manifeste du package AppX, selon les Spécifications de la création du package AppX et du Schéma du manifeste AppX.">
+      <TEST INDEX="45" NAME="Validation des ressources de l'application" DESCRIPTION="Les ressources valides doivent être définies dans le fichier resources.pri du package." EXECUTIONTIME="00h:00m:00s.81ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="61" NAME="Validation du marquage" DESCRIPTION="L'application ne doit pas utiliser les images par défaut fournies par les échantillons Windows SDK ou Visual Studio." EXECUTIONTIME="00h:00m:05s.29ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="20" TITLE="Test de configuration de débogage" RATIONALE="L’application ne doit pas installer de binaires de débogage.">
+      <TEST INDEX="46" NAME="Configuration de débogage" DESCRIPTION="L’application ne doit pas installer de binaires de débogage." EXECUTIONTIME="00h:00m:04s.08ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="21" TITLE="Test de codage de fichier" RATIONALE="Les packages contenant une application Windows Store HTML5 doivent avoir un codage de fichier correct.">
+      <TEST INDEX="49" NAME="Codage de fichier UTF-8" DESCRIPTION="Les packages contenant une application Windows Store HTML5 doivent avoir un codage de fichier correct." EXECUTIONTIME="00h:00m:03s.80ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="22" TITLE="Test de fonctionnalité Direct3D" RATIONALE="L’application doit utiliser la fonctionnalité Direct3D correctement.">
+      <TEST INDEX="51" NAME="Prise en charge du niveau de fonctionnalité Direct3D" DESCRIPTION="Les applications doivent afficher le contenu sur un matériel 9.1 avec niveau de fonctionnalité Direct3D." EXECUTIONTIME="00h:00m:11s.91ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="71" NAME="Direct3D Trim après Suspend" DESCRIPTION="Les applications doivent appeler IDXGIDevice3::Trim() sur les appareils Direct3D qu’elles créent lors du traitement d’une notification Suspend." EXECUTIONTIME="00h:00m:00s.90ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="23" TITLE="Test des capacités des applications" RATIONALE="Les packages déclarant des capacités d'utilisation spéciales devront fournir des justifications au cours du processus d'intégration.">
+      <TEST INDEX="52" NAME="Capacités d'utilisation spéciales" DESCRIPTION="Les packages déclarant des capacités d'utilisation spéciales devront fournir des justifications au cours du processus d'intégration." EXECUTIONTIME="00h:00m:02s.23ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="24" TITLE="Validation des métadonnées Windows Runtime" RATIONALE="Les métadonnées doivent être conformes et cohérentes dans toutes les sources de génération.">
+      <TEST INDEX="56" NAME="Test de l'attribut ExclusiveTo" DESCRIPTION="Une classe ne doit pas implémenter une interface marquée comme ExclusiveTo d'une autre classe." EXECUTIONTIME="00h:00m:02s.13ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="57" NAME="Test d'emplacement du type" DESCRIPTION="Les types doivent être définis dans le fichier de métadonnées ayant l'espace de noms le plus long correspondant." EXECUTIONTIME="00h:00m:00s.81ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="55" NAME="Test de respect de la casse du nom du type" DESCRIPTION="Les noms du type et de l'espace de noms ne doivent pas varier uniquement au niveau de la casse." EXECUTIONTIME="00h:00m:01s.03ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="54" NAME="Test d'exactitude du nom du type" DESCRIPTION="Seuls des types système peuvent être dans l'espace de noms Windows et aucun titre ne peut être dans l'espace de noms global." EXECUTIONTIME="00h:00m:01s.01ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="58" NAME="Test d'exactitude des métadonnées générales" DESCRIPTION="Les fichiers de métadonnées doivent répondre à diverses exigences afin d'être valides et exacts." EXECUTIONTIME="00h:00m:02s.95ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="53" NAME="Test des propriétés" DESCRIPTION="Impossible d'utiliser des propriétés d'écriture seule et d'indexeur." EXECUTIONTIME="00h:00m:00s.78ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="25" TITLE="Test d’intégrité du package" RATIONALE="Validation du contenu du package d’application visant à garantir son exactitude.">
+      <TEST INDEX="63" NAME="Fichiers appropriés pour la plateforme" DESCRIPTION="L’application ne doit pas installer de fichiers ne correspondant pas à l’architecture du processeur cible." EXECUTIONTIME="00h:00m:03s.91ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="66" NAME="Vérification de la structure de répertoire prise en charge" DESCRIPTION="Validez chaque fichier dans le package et assurez-vous que la longueur du nom de fichier est inférieure à MAX_PATH." EXECUTIONTIME="00h:00m:01s.66ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="26" TITLE="Prise en charge de la haute résolution" RATIONALE="L’application doit définir la prise en charge DPI pour que l’apparence de l’interface utilisateur soit cohérente entre de nombreux paramètres d’affichage en haute résolution." />
+    <REQUIREMENT NUMBER="27" TITLE="Test d’utilisation de ressource" RATIONALE="Les tâches en arrière-plan WinJS doivent appeler close() pour libérer la ressource.">
+      <TEST INDEX="68" NAME="Test de tâche en arrière-plan WinJS" DESCRIPTION="Les tâches en arrière-plan WinJS doivent appeler close() pour libérer la ressource." EXECUTIONTIME="00h:00m:02s.50ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+  </REQUIREMENTS>
+  <APPLICATIONS>
+    <Installed_Programs>
+      <Program Name="26572j0xLs.RedditRSS" Type="Application" Source="AppxPackage" Publisher="CN=F99768EE-10B2-44DF-B7CA-AEA8CB32F23F" Version="1.1.0.0" Language="1033" InstallDate="05/17/2015 18:01:45" RootDirPath="C:\Program Files\WindowsApps\26572j0xLs.RedditRSS_1.1.0.0_neutral__rmckq8asqhr4c" Id="0000f93a229d33353d951bed723dd3b6c9ce00000904">
+        <Indicators>
+          <WindowsStoreAppManifestIndicators>
+            <PackageManifest PackageFullName="26572j0xLs.RedditRSS_1.1.0.0_neutral__rmckq8asqhr4c">
+              <Package>
+                <Identity Name="26572j0xLs.RedditRSS" Version="1.1.0.0" Publisher="CN=F99768EE-10B2-44DF-B7CA-AEA8CB32F23F" ProcessorArchitecture="neutral" />
+                <Properties>
+                  <DisplayName>RedditRSS</DisplayName>
+                  <PublisherDisplayName>j0_xLs</PublisherDisplayName>
+                  <Logo>images\storelogo.png</Logo>
+                </Properties>
+                <Prerequisites>
+                  <OSMinVersion>6.3.0</OSMinVersion>
+                  <OSMaxVersionTested>6.3.0</OSMaxVersionTested>
+                </Prerequisites>
+                <Resources>
+                  <Resource Language="EN-US" />
+                </Resources>
+                <Applications>
+                  <Application Id="App" StartPage="default.html">
+                    <VisualElements DisplayName="RedditRSS" Description="Browse Reddit and its subreddit !" ForegroundText="light" BackgroundColor="#464646" Square150x150Logo="images\Logo.png" Square30x30Logo="images\SmallLogo.png">
+                      <SplashScreen Image="images\splashscreen.png" BackgroundColor="#D3F3FE" />
+                    </VisualElements>
+                  </Application>
+                </Applications>
+                <Capabilities>
+                  <Capability Name="internetClient" />
+                </Capabilities>
+                <Dependencies>
+                  <PackageDependency Name="Microsoft.WinJS.2.0" MinVersion="1.0.9600.17018" />
+                </Dependencies>
+              </Package>
+            </PackageManifest>
+          </WindowsStoreAppManifestIndicators>
+        </Indicators>
+        <StaticProperties>
+          <Files Id="00006ab792a49c4fb04369cc3c145506445a47f8ed9e">
+            <File Name="home.js" Id="000005ccc3dc2b5e1b1e33ab2668122752126a13b482" Size="0xf07" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\26572j0xls.redditrss_1.1.0.0_neutral__rmckq8asqhr4c\pages\home\home.js" LongPathHash="0000fa889d34d6a03109e551b4deaec88f25a4759b85" />
+            <File Name="default.js" Id="0000815760b3e6dedad820f8bc42abe328fc7906a2a2" Size="0x69c" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\26572j0xls.redditrss_1.1.0.0_neutral__rmckq8asqhr4c\js\default.js" LongPathHash="00004012f102651a7a6eb710cd31cb1719fd1a91954d" />
+            <File Name="navigator.js" Id="00000edb8fb2cf3081528c0749c6b3bfe8faf0bb7df2" Size="0x1296" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\26572j0xls.redditrss_1.1.0.0_neutral__rmckq8asqhr4c\js\navigator.js" LongPathHash="00008c57c4fe9f32b2519d1b6b3ebaf4f6b10a351e15" />
+            <File Name="search.html" Id="000079e898fe1a2b6e564f08d9127abe942bd3d456bb" Size="0x683" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\26572j0xls.redditrss_1.1.0.0_neutral__rmckq8asqhr4c\pages\search\search.html" LongPathHash="0000068e4fc889c96a8d500a5f1fafb8a205403c16c6" />
+            <File Name="about.js" Id="0000ce464080a72cd97b56b85652d7dc5bc7dfce419e" Size="0xab" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\26572j0xls.redditrss_1.1.0.0_neutral__rmckq8asqhr4c\pages\about\about.js" LongPathHash="00009c1b9c532f7c63b2c75b0dec2165290154fd07bf" />
+            <File Name="content.html" Id="00007bf5c572a58ddd2040f419ca7cc654df71420ae6" Size="0x509" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\26572j0xls.redditrss_1.1.0.0_neutral__rmckq8asqhr4c\pages\content\content.html" LongPathHash="00009ad0284b9f5a3b8267c9038eec6d47c187e645a4" />
+            <File Name="content.js" Id="0000433c931bd26087d7674c1412b8a534d62b594afc" Size="0x7b5" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\26572j0xls.redditrss_1.1.0.0_neutral__rmckq8asqhr4c\pages\content\content.js" LongPathHash="000025421ade0606db15d27387c1704cc0126b089eef" />
+            <File Name="home.html" Id="00003931f764724b5e6243a89f4c4641327ba2ba85c6" Size="0x8e2" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\26572j0xls.redditrss_1.1.0.0_neutral__rmckq8asqhr4c\pages\home\home.html" LongPathHash="00004d4306ed82fb7a1dbc089b43198d2e28b2028054" />
+            <File Name="default.html" Id="0000fe903454b1b2ce4cf1b57b36a38d1281ba6c1e35" Size="0x2a9" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\26572j0xls.redditrss_1.1.0.0_neutral__rmckq8asqhr4c\default.html" LongPathHash="00001c69fda5c01ebccdf18427974084d92580eb9365" />
+            <File Name="resources.pri" Id="0000cddf83f0696ee1fb607b2806abd35ae4b088a737" Size="0x1088" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\26572j0xls.redditrss_1.1.0.0_neutral__rmckq8asqhr4c\resources.pri" LongPathHash="000014e2b8a77b155932732e23fdc3515cad0c26117b" />
+            <File Name="about.html" Id="00009a70b5d38dc7038d61ada63b0bfc4e20df1a300f" Size="0x4e1" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\26572j0xls.redditrss_1.1.0.0_neutral__rmckq8asqhr4c\pages\about\about.html" LongPathHash="00002b7b184f7d97892ce5396cb7ea9e125a60f3a744" />
+            <File Name="subreddit.js" Id="00004face82402cd64c2001f0107bad07e17bc69bf7c" Size="0x9e6" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\26572j0xls.redditrss_1.1.0.0_neutral__rmckq8asqhr4c\pages\subreddit\subreddit.js" LongPathHash="0000d1f63009be8baeca62173ad8ce448db876467d64" />
+            <File Name="subreddit.html" Id="0000a9d192887ae129fa0423a33706f22578ce7eb874" Size="0x76e" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\26572j0xls.redditrss_1.1.0.0_neutral__rmckq8asqhr4c\pages\subreddit\subreddit.html" LongPathHash="000036e48d719edf2005842557468c4814aa443b11c6" />
+            <File Name="search.js" Id="0000d082bd69829dd49ed8150f71007dd98452bbc7a5" Size="0x556" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\26572j0xls.redditrss_1.1.0.0_neutral__rmckq8asqhr4c\pages\search\search.js" LongPathHash="00005457a6cc4f21b6824ed24857f60b0147c24d2014" />
+          </Files>
+        </StaticProperties>
+      </Program>
+    </Installed_Programs>
+  </APPLICATIONS>
+  <DEPENDENCY_INFORMATION>
+    <AitStaticAnalysis ProgramId="0000f93a229d33353d951bed723dd3b6c9ce00000904" AnalysisVersion="1.60" DictionaryVersion="2.16" Type="Package" Id="26572j0xLs.RedditRSS_1.1.0.0_neutral__rmckq8asqhr4c">
+      <AitFile ErrorCode="0" Name="home.js" Id="000005ccc3dc2b5e1b1e33ab2668122752126a13b482">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS.Binding.List" />
+          <AitFeature Name="WinJS.Namespace.define" />
+          <AitFeature Name="WinJS.Navigation.navigate" />
+          <AitFeature Name="WinJS.UI.Pages.define" />
+          <AitFeature Name="WinJS.Utilities.query" />
+          <AitFeature Name="Windows.UI.Notifications" />
+          <AitFeature Name="document.getElementById" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="navigator.js" Id="00000edb8fb2cf3081528c0749c6b3bfe8faf0bb7df2">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS.Class.define" />
+          <AitFeature Name="WinJS.Namespace.define" />
+          <AitFeature Name="WinJS.Navigation" />
+          <AitFeature Name="WinJS.Promise.as" />
+          <AitFeature Name="WinJS.UI.Animation.enterPage" />
+          <AitFeature Name="WinJS.UI.Pages.render" />
+          <AitFeature Name="WinJS.Utilities.disposeSubTree" />
+          <AitFeature Name="document.createElement" />
+          <AitFeature Name="window.getComputedStyle" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="home.html" Id="00003931f764724b5e6243a89f4c4641327ba2ba85c6">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS.Binding.Template" />
+          <AitFeature Name="WinJS.UI.AppBarCommand" />
+          <AitFeature Name="WinJS.UI.BackButton" />
+          <AitFeature Name="WinJS.UI.ListView" />
+          <AitFeature Name="WinJS.UI.MenuCommand" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="content.js" Id="0000433c931bd26087d7674c1412b8a534d62b594afc">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS.Binding.processAll" />
+          <AitFeature Name="WinJS.UI.Pages.define" />
+          <AitFeature Name="Windows.ApplicationModel.DataTransfer.DataTransferManager.getForCurrentView" />
+          <AitFeature Name="Windows.Foundation.Uri" />
+          <AitFeature Name="document.getElementById" />
+          <AitFeature Name="document.querySelector" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="subreddit.js" Id="00004face82402cd64c2001f0107bad07e17bc69bf7c">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS.Binding.List" />
+          <AitFeature Name="WinJS.Namespace.define" />
+          <AitFeature Name="WinJS.Navigation.navigate" />
+          <AitFeature Name="WinJS.UI.Pages.define" />
+          <AitFeature Name="document.getElementById" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="search.html" Id="000079e898fe1a2b6e564f08d9127abe942bd3d456bb">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS.Binding.Template" />
+          <AitFeature Name="WinJS.UI.BackButton" />
+          <AitFeature Name="WinJS.UI.ListView" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="content.html" Id="00007bf5c572a58ddd2040f419ca7cc654df71420ae6">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS.UI.BackButton" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="default.js" Id="0000815760b3e6dedad820f8bc42abe328fc7906a2a2">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS.Application" />
+          <AitFeature Name="WinJS.Navigation" />
+          <AitFeature Name="WinJS.UI.SettingsFlyout.populateSettings" />
+          <AitFeature Name="WinJS.Utilities.Scheduler" />
+          <AitFeature Name="Windows.ApplicationModel.Activation" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="about.html" Id="00009a70b5d38dc7038d61ada63b0bfc4e20df1a300f">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS.UI.SettingsFlyout" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="subreddit.html" Id="0000a9d192887ae129fa0423a33706f22578ce7eb874">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS.Binding.Template" />
+          <AitFeature Name="WinJS.UI.AppBarCommand" />
+          <AitFeature Name="WinJS.UI.BackButton" />
+          <AitFeature Name="WinJS.UI.ListView" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="about.js" Id="0000ce464080a72cd97b56b85652d7dc5bc7dfce419e">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS.UI.Pages.define" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="search.js" Id="0000d082bd69829dd49ed8150f71007dd98452bbc7a5">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS.Binding.List" />
+          <AitFeature Name="WinJS.Namespace.define" />
+          <AitFeature Name="WinJS.Navigation.navigate" />
+          <AitFeature Name="WinJS.UI.Pages.define" />
+          <AitFeature Name="document.getElementById" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="default.html" Id="0000fe903454b1b2ce4cf1b57b36a38d1281ba6c1e35" />
+    </AitStaticAnalysis>
+  </DEPENDENCY_INFORMATION>
+</REPORT>

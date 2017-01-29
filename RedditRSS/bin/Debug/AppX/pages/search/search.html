@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>search</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.2.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.2.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.2.0/js/ui.js"></script>
+
+    <link href="/css/default.css" rel="stylesheet" />
+    <link href="/pages/search/search.css" rel="stylesheet" />
+    <script src="/pages/search/search.js"></script>
+</head>
+<body>
+    <!-- The content that will be loaded and displayed. -->
+    <div class="search fragment">
+        <header aria-label="Header content" role="banner">
+            <button data-win-control="WinJS.UI.BackButton"></button>
+            <h1 class="titlearea win-type-ellipsis">
+                <span class="pagetitle">Search a subreddit</span>
+            </h1>
+        </header>
+        <div id="SearchItemTemplate" data-win-control="WinJS.Binding.Template" class="hide" data-win-design-hidden="true">
+            <div class="listItemTemplate">
+                <div class="listItemTitle" data-win-bind="innerText: subreddit">
+                </div>
+            </div>
+        </div>
+        <section aria-label="Main content" role="main">
+            <input id="search" type="text"/>
+            <button id="search-button" onclick="Search.SearchButton(event)">Submit</button>
+            <div id="search-list" data-win-control="WinJS.UI.ListView"
+                 data-win-options="{ itemDataSource : Search.ItemList.dataSource, itemTemplate: SearchItemTemplate }">
+            </div>
+        </section>
+    </div>
+</body>
+</html>
